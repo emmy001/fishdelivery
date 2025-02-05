@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Fresh Fish Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066CC',
+                        secondary: '#FF9900'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            min-height: 1024px;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="mx-auto max-w-[1440px] px-6 py-8">
+        <nav class="flex items-center justify-between mb-12">
+            <div class="text-3xl font-['Pacifico']">logo</div>
+            <a href="menu.html" class="text-gray-600 hover:text-primary transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>Continue Shopping
+            </a>
+        </nav>
+
+        <main>
+            <div class="flex justify-between items-start gap-8">
+                <div class="flex-1">
+                    <div class="flex items-center justify-between mb-8">
+                        <h1 class="text-2xl font-semibold">Shopping Cart</h1>
+                        <span class="text-gray-600">3 Items</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded shadow-sm">
+                            <div class="flex gap-6">
+                                <div class="w-32 h-32 rounded overflow-hidden">
+                                    <img src="https://public.readdy.ai/ai/img_res/fedabcaeddafc0f35e4d319a74c4b153.jpg" class="w-full h-full object-cover" alt="Fresh Salmon">
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between">
+                                        <h3 class="text-lg font-medium">Fresh Atlantic Salmon</h3>
+                                        <button class="text-gray-400 hover:text-red-500 transition-colors">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Premium quality, farm-raised</p>
+                                    <p class="text-primary font-medium mt-2">$24.99 / lb</p>
+                                    <div class="flex items-center gap-4 mt-4">
+                                        <div class="flex items-center border rounded-button">
+                                            <button class="px-3 py-1 border-r hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input type="number" value="1" class="w-12 text-center border-none" min="1">
+                                            <button class="px-3 py-1 border-l hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <span class="font-medium">$24.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-sm">
+                            <div class="flex gap-6">
+                                <div class="w-32 h-32 rounded overflow-hidden">
+                                    <img src="https://public.readdy.ai/ai/img_res/9c1aabb0f1c822aa749730d671a84ab4.jpg" class="w-full h-full object-cover" alt="Tuna Steak">
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between">
+                                        <h3 class="text-lg font-medium">Fresh Tuna Steak</h3>
+                                        <button class="text-gray-400 hover:text-red-500 transition-colors">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Sushi-grade quality</p>
+                                    <p class="text-primary font-medium mt-2">$29.99 / lb</p>
+                                    <div class="flex items-center gap-4 mt-4">
+                                        <div class="flex items-center border rounded-button">
+                                            <button class="px-3 py-1 border-r hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input type="number" value="2" class="w-12 text-center border-none" min="1">
+                                            <button class="px-3 py-1 border-l hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <span class="font-medium">$59.98</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-sm">
+                            <div class="flex gap-6">
+                                <div class="w-32 h-32 rounded overflow-hidden">
+                                    <img src="https://public.readdy.ai/ai/img_res/04a4a66d89250d3dd851e5b6aa6331f7.jpg" class="w-full h-full object-cover" alt="Sea Bass">
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between">
+                                        <h3 class="text-lg font-medium">Fresh Sea Bass</h3>
+                                        <button class="text-gray-400 hover:text-red-500 transition-colors">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Wild-caught, Mediterranean</p>
+                                    <p class="text-primary font-medium mt-2">$34.99 / lb</p>
+                                    <div class="flex items-center gap-4 mt-4">
+                                        <div class="flex items-center border rounded-button">
+                                            <button class="px-3 py-1 border-r hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input type="number" value="1" class="w-12 text-center border-none" min="1">
+                                            <button class="px-3 py-1 border-l hover:bg-gray-100 !rounded-button">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <span class="font-medium">$34.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-96">
+                    <div class="bg-white p-6 rounded shadow-sm sticky top-6">
+                        <h2 class="text-xl font-semibold mb-6">Order Summary</h2>
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Subtotal</span>
+                                <span class="font-medium">$119.96</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Delivery Fee</span>
+                                <span class="font-medium">$5.99</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Tax</span>
+                                <span class="font-medium">$12.59</span>
+                            </div>
+                            <div class="h-px bg-gray-200 my-4"></div>
+                            <div class="flex justify-between text-lg font-semibold">
+                                <span>Total</span>
+                                <span>$138.54</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 mt-6 font-medium hover:bg-primary/90 transition-colors !rounded-button whitespace-nowrap">
+                            Proceed to Checkout
+                        </button>
+                        <p class="text-gray-500 text-sm text-center mt-4">
+                            Free delivery for orders over $100
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

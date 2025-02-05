@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fresh Fish Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0369a1',
+                        secondary: '#0ea5e9'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 1024px;
+        }
+        .hero-section {
+            background-image: url('https://public.readdy.ai/ai/img_res/c22b239b185646673f4d074ac2d85ea4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-[1440px] mx-auto px-8 h-20 flex items-center justify-between">
+            <a href="/" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+            <nav class="flex items-center space-x-8">
+                <a href="home.html" class="text-gray-600 hover:text-primary">Home</a>
+                <a href="about.html" class="text-primary font-medium">About Us</a>
+                <a href="menu.html" class="text-gray-600 hover:text-primary">Menu</a>
+                <a href="delivery.html" class="text-gray-600 hover:text-primary">Delivery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                <button href="menu.html" class="!rounded-button bg-primary text-white px-6 py-2 whitespace-nowrap">Order Now</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section h-[600px] flex items-center relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+            <div class="max-w-[1440px] mx-auto px-8 relative">
+                <h1 class="text-6xl font-bold text-white mb-6">About Us</h1>
+                <p class="text-xl text-white/90 max-w-2xl">Delivering the freshest catch from ocean to your table, we're committed to quality, sustainability, and exceptional service.</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="flex items-center gap-16">
+                    <div class="flex-1">
+                        <h2 class="text-4xl font-bold mb-8">Our Story</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Founded in 2015 by James Richardson, a third-generation fisherman, Ocean Fresh Direct was born from a simple yet powerful idea: everyone deserves access to restaurant-quality seafood at home.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">What started as a small local delivery service in Boston has grown into a trusted name in fresh seafood delivery across New England, serving over 50,000 satisfied customers annually.</p>
+                        <p class="text-gray-600 leading-relaxed">We work directly with local fishing fleets and sustainable aquaculture farms to ensure that every piece of seafood meets our exacting standards for quality and sustainability.</p>
+                    </div>
+                    <div class="flex-1 overflow-hidden rounded-lg">
+                        <img src="https://public.readdy.ai/ai/img_res/3738d230fd98686c39b55222e1aedb40.jpg" class="w-full h-full object-cover" alt="Our team at work">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Our Vision & Mission</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Committed to revolutionizing how people access and enjoy fresh seafood</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="bg-white p-12 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-eye text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">To be the most trusted name in seafood delivery, making premium quality fish accessible to everyone while promoting sustainable fishing practices and ocean conservation.</p>
+                    </div>
+                    <div class="bg-white p-12 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-bullseye text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-primary mt-1"></i>
+                                <span>Deliver the freshest seafood within 24 hours of catch</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-primary mt-1"></i>
+                                <span>Support local fishing communities and sustainable practices</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-primary mt-1"></i>
+                                <span>Educate customers about seafood preparation and conservation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-primary mt-1"></i>
+                                <span>Maintain the highest standards of quality and food safety</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Quality Assurance & Sustainability</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our commitment to excellence goes beyond just delivering fresh fish</p>
+                </div>
+                <div class="grid grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-temperature-low text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Temperature Control</h3>
+                        <p class="text-gray-600">Maintained at optimal temperature throughout the entire supply chain</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-fish text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Sustainable Fishing</h3>
+                        <p class="text-gray-600">Partnership with certified sustainable fishing operations</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-clipboard-check text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Quality Checks</h3>
+                        <p class="text-gray-600">Multiple quality control points from catch to delivery</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-truck text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Swift Delivery</h3>
+                        <p class="text-gray-600">Same-day delivery to ensure maximum freshness</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">The passionate people behind our success</p>
+                </div>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <img src="https://public.readdy.ai/ai/img_res/0c29905c1faeae86487ad15f3719877e.jpg" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" alt="Team member">
+                        <h3 class="text-xl font-bold text-center mb-2">Michael Anderson</h3>
+                        <p class="text-primary text-center mb-4">Chief Executive Officer</p>
+                        <p class="text-gray-600 text-center">With over 20 years in the seafood industry, Michael leads our company with passion and expertise.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <img src="https://public.readdy.ai/ai/img_res/83f5571020720c5d4049ce7e01545fcc.jpg" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" alt="Team member">
+                        <h3 class="text-xl font-bold text-center mb-2">Sarah Thompson</h3>
+                        <p class="text-primary text-center mb-4">Operations Director</p>
+                        <p class="text-gray-600 text-center">Sarah ensures our operations run smoothly and maintains our high quality standards.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <img src="https://public.readdy.ai/ai/img_res/51c71c33c035652fbc432f3c930139ba.jpg" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" alt="Team member">
+                        <h3 class="text-xl font-bold text-center mb-2">David Chen</h3>
+                        <p class="text-primary text-center mb-4">Quality Assurance Manager</p>
+                        <p class="text-gray-600 text-center">David's expertise ensures that every delivery meets our strict quality standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">What Our Customers Say</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Real feedback from satisfied customers</p>
+                </div>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-sm mx-4">
+                                    <div class="flex items-center text-yellow-400 mb-4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="text-gray-600 mb-6">"The quality of fish is exceptional! I've been ordering weekly for the past year and have never been disappointed. The delivery is always on time and the packaging is excellent."</p>
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/1963cbfb7852105581334fa10d544741.jpg" class="w-12 h-12 rounded-full object-cover" alt="Customer">
+                                        <div>
+                                            <p class="font-medium">Elizabeth Parker</p>
+                                            <p class="text-sm text-gray-500">Boston, MA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-sm mx-4">
+                                    <div class="flex items-center text-yellow-400 mb-4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="text-gray-600 mb-6">"As a restaurant owner, I need reliable suppliers. Ocean Fresh Direct has been exceptional in their service and quality. Their sustainable practices align perfectly with our values."</p>
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/a44914aece61b34d1307a4e655ac8bbf.jpg" class="w-12 h-12 rounded-full object-cover" alt="Customer">
+                                        <div>
+                                            <p class="font-medium">Robert Martinez</p>
+                                            <p class="text-sm text-gray-500">Providence, RI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white p-8 rounded-lg shadow-sm mx-4">
+                                    <div class="flex items-center text-yellow-400 mb-4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="text-gray-600 mb-6">"The convenience of having fresh fish delivered to my door is amazing. Their app is easy to use, and the customer service team is always helpful. Highly recommended!"</p>
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/6e172516067ceba3dde0acaf6dece309.jpg" class="w-12 h-12 rounded-full object-cover" alt="Customer">
+                                        <div>
+                                            <p class="font-medium">Jennifer Williams</p>
+                                            <p class="text-sm text-gray-500">Portland, ME</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">We'd love to hear from you</p>
+                </div>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Call Us</h3>
+                        <p class="text-gray-600">+1 (888) 123-4567</p>
+                        <p class="text-gray-600">Mon-Fri: 8:00 AM - 8:00 PM</p>
+                        <p class="text-gray-600">Sat-Sun: 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                        <p class="text-gray-600">info@oceanfreshdirect.com</p>
+                        <p class="text-gray-600">support@oceanfreshdirect.com</p>
+                        <p class="text-gray-600">Response within 24 hours</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-location-dot text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Visit Us</h3>
+                        <p class="text-gray-600">123 Seaport Boulevard</p>
+                        <p class="text-gray-600">Boston, MA 02210</p>
+                        <p class="text-gray-600">United States</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-20">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="grid grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="home.html" class="text-3xl font-['Pacifico'] text-white mb-6 block">logo</a>
+                    <p class="text-gray-400">Delivering the freshest catch from ocean to your table since 2015.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="home.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-white">Menu</a></li>
+                        <li><a href="delivery.html" class="text-gray-400 hover:text-white">Delivery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get special offers and updates</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-button bg-gray-800 border-none text-white">
+                        <button type="submit" class="!rounded-r-button !rounded-l-none bg-primary px-6 py-2 whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Ocean Fresh Direct. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            focusAt: 'center',
+            gap: 32,
+            autoplay: 3000,
+            animationDuration: 1000,
+            hoverpause: true
+        }).mount()
+    </script>
+</body>
+</html>
