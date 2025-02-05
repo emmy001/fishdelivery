@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Fresh Fish Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066CC',
+                        secondary: '#4A90E2'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 1024px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="h-16 bg-white border-b border-gray-200">
+        <div class="max-w-[1440px] mx-auto px-8 h-full flex items-center justify-between">
+            <a href="/" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+            <div class="flex items-center gap-6">
+                <button class="!rounded-button flex items-center gap-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-shopping-cart w-5 h-5 flex items-center justify-center"></i>
+                    <span class="whitespace-nowrap">Cart</span>
+                </button>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">JD</div>
+                    <span class="font-medium">James Davis</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-8 py-8 flex gap-8">
+        <aside class="w-64 flex-shrink-0">
+            <nav class="bg-white rounded-lg p-4 border border-gray-200">
+                <div class="flex flex-col gap-2">
+                    <a href="#profile" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary bg-opacity-10 text-primary">
+                        <i class="fas fa-user w-5 h-5 flex items-center justify-center"></i>
+                        <span>Profile Information</span>
+                    </a>
+                    <a href="#orders" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-gray-600">
+                        <i class="fas fa-shopping-bag w-5 h-5 flex items-center justify-center"></i>
+                        <span>Order History</span>
+                    </a>
+                    <a href="#addresses" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-gray-600">
+                        <i class="fas fa-map-marker-alt w-5 h-5 flex items-center justify-center"></i>
+                        <span>Address Book</span>
+                    </a>
+                    <a href="#payment" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-gray-600">
+                        <i class="fas fa-credit-card w-5 h-5 flex items-center justify-center"></i>
+                        <span>Payment Methods</span>
+                    </a>
+                    <a href="#settings" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-gray-600">
+                        <i class="fas fa-cog w-5 h-5 flex items-center justify-center"></i>
+                        <span>Account Settings</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="flex-1">
+            <section id="profile" class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+                <h2 class="text-xl font-semibold mb-6">Profile Information</h2>
+                <div class="flex gap-8">
+                    <div class="w-32 flex-shrink-0">
+                        <div class="w-32 h-32 rounded-full bg-gray-100 mb-4 relative">
+                            <img src="https://public.readdy.ai/ai/img_res/dd782c52ad103931bd9823749a7560c8.jpg" class="w-full h-full rounded-full object-cover" alt="Profile Photo">
+                            <button class="absolute bottom-0 right-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center shadow-lg !rounded-button">
+                                <i class="fas fa-camera w-4 h-4 flex items-center justify-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" value="James" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" value="Davis" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" value="james.davis@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                <input type="tel" value="+1 (555) 123-4567" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                            </div>
+                        </div>
+                        <button class="mt-6 px-6 py-2 bg-primary text-white !rounded-button whitespace-nowrap">Save Changes</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="orders" class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold">Order History</h2>
+                    <div class="flex gap-4">
+                        <div class="relative">
+                            <input type="text" placeholder="Search orders" class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg w-64 focus:ring-2 focus:ring-primary focus:border-primary">
+                            <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 flex items-center justify-center"></i>
+                        </div>
+                        <button class="px-4 py-2 border border-gray-300 !rounded-button whitespace-nowrap flex items-center gap-2">
+                            <i class="fas fa-filter w-4 h-4 flex items-center justify-center"></i>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-4 px-4 font-medium text-gray-600">Order ID</th>
+                                <th class="text-left py-4 px-4 font-medium text-gray-600">Date</th>
+                                <th class="text-left py-4 px-4 font-medium text-gray-600">Items</th>
+                                <th class="text-left py-4 px-4 font-medium text-gray-600">Total</th>
+                                <th class="text-left py-4 px-4 font-medium text-gray-600">Status</th>
+                                <th class="text-right py-4 px-4 font-medium text-gray-600">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4">#ORD-2023-8745</td>
+                                <td class="py-4 px-4">Oct 15, 2023</td>
+                                <td class="py-4 px-4">Fresh Salmon, Sea Bass</td>
+                                <td class="py-4 px-4">$89.99</td>
+                                <td class="py-4 px-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Delivered</span>
+                                </td>
+                                <td class="py-4 px-4 text-right">
+                                    <button class="text-primary hover:text-primary-dark !rounded-button whitespace-nowrap">View Details</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4">#ORD-2023-8744</td>
+                                <td class="py-4 px-4">Oct 12, 2023</td>
+                                <td class="py-4 px-4">Tuna Steak, Shrimp</td>
+                                <td class="py-4 px-4">$65.50</td>
+                                <td class="py-4 px-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Processing</span>
+                                </td>
+                                <td class="py-4 px-4 text-right">
+                                    <button class="text-primary hover:text-primary-dark !rounded-button whitespace-nowrap">View Details</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4">#ORD-2023-8743</td>
+                                <td class="py-4 px-4">Oct 8, 2023</td>
+                                <td class="py-4 px-4">Cod Fillet, Mussels</td>
+                                <td class="py-4 px-4">$45.75</td>
+                                <td class="py-4 px-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Delivered</span>
+                                </td>
+                                <td class="py-4 px-4 text-right">
+                                    <button class="text-primary hover:text-primary-dark !rounded-button whitespace-nowrap">View Details</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="addresses" class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold">Address Book</h2>
+                    <button class="px-4 py-2 bg-primary text-white !rounded-button whitespace-nowrap flex items-center gap-2">
+                        <i class="fas fa-plus w-4 h-4 flex items-center justify-center"></i>
+                        Add New Address
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="font-medium mb-1">Home</h3>
+                                <p class="text-sm text-gray-600">Default Address</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-pencil w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-red-500 border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-trash w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">1234 Ocean View Drive<br>Marina District<br>San Francisco, CA 94123<br>United States</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="font-medium mb-1">Office</h3>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-pencil w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-red-500 border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-trash w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">555 Market Street<br>Suite 400<br>San Francisco, CA 94105<br>United States</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="payment" class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold">Payment Methods</h2>
+                    <button class="px-4 py-2 bg-primary text-white !rounded-button whitespace-nowrap flex items-center gap-2">
+                        <i class="fas fa-plus w-4 h-4 flex items-center justify-center"></i>
+                        Add Payment Method
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-cc-visa text-2xl text-blue-600"></i>
+                                <div>
+                                    <h3 class="font-medium mb-1">Visa ending in 4242</h3>
+                                    <p class="text-sm text-gray-600">Expires 12/24</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-pencil w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-red-500 border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-trash w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-cc-mastercard text-2xl text-orange-600"></i>
+                                <div>
+                                    <h3 class="font-medium mb-1">Mastercard ending in 8888</h3>
+                                    <p class="text-sm text-gray-600">Expires 09/25</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-pencil w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                                <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-red-500 border border-gray-200 rounded-lg !rounded-button">
+                                    <i class="fas fa-trash w-4 h-4 flex items-center justify-center"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="settings" class="bg-white rounded-lg p-6 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-6">Account Settings</h2>
+                <div class="border-b border-gray-200 pb-6 mb-6">
+                    <h3 class="font-medium mb-4">Change Password</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Current Password</label>
+                            <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">New Password</label>
+                            <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                        </div>
+                    </div>
+                    <button class="mt-4 px-6 py-2 bg-primary text-white !rounded-button whitespace-nowrap">Update Password</button>
+                </div>
+                <div class="border-b border-gray-200 pb-6 mb-6">
+                    <h3 class="font-medium mb-4">Notification Preferences</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-medium">Email Notifications</h4>
+                                <p class="text-sm text-gray-600">Receive updates about your orders via email</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-medium">SMS Notifications</h4>
+                                <p class="text-sm text-gray-600">Get text messages for order updates</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-medium">Marketing Communications</h4>
+                                <p class="text-sm text-gray-600">Receive special offers and promotions</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-red-600 mb-2">Delete Account</h3>
+                    <p class="text-sm text-gray-600 mb-4">Once you delete your account, there is no going back. Please be certain.</p>
+                    <button class="px-6 py-2 bg-red-600 text-white !rounded-button whitespace-nowrap">Delete Account</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
