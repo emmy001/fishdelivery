@@ -52,17 +52,14 @@
     </style>
 </head>
 <body class="font-sans">
-    <!-- Header -->
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between h-20 py-4 md:py-0">
-                <!-- Logo -->
+            <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-4">
                     <h1 class="text-3xl font-['Pacifico'] text-primary">logo</h1>
                 </div>
 
-                <!-- Search Bar -->
-                <div class="flex-1 max-w-xl mx-4 my-4 md:my-0">
+                <div class="flex-1 max-w-xl mx-8">
                     <div class="relative">
                         <input type="text" placeholder="Search for seafood..." class="w-full px-4 py-2 border border-gray-200 rounded-button text-sm focus:outline-none focus:border-primary">
                         <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary">
@@ -71,7 +68,6 @@
                     </div>
                 </div>
 
-                <!-- User and Cart -->
                 <div class="flex items-center space-x-6">
                     <button class="flex items-center space-x-2 text-gray-600 hover:text-primary !rounded-button whitespace-nowrap">
                         <i class="fas fa-user w-5 h-5 flex items-center justify-center"></i>
@@ -84,8 +80,7 @@
                 </div>
             </div>
 
-            <!-- Navigation -->
-            <nav class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 h-14 py-4 md:py-0">
+            <nav class="flex items-center space-x-8 h-14">
                 <a href="index.html" class="text-primary font-medium">Home</a>
                 <a href="about.html" class="text-gray-600 hover:text-primary">About Us</a>
                 <a href="menu.html" class="text-gray-600 hover:text-primary">Menu</a>
@@ -94,26 +89,22 @@
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero-section h-[400px] md:h-[600px] relative">
+    <section class="hero-section h-[600px] relative">
         <div class="absolute inset-0 bg-gradient-to-r from-white/90 to-transparent">
             <div class="container mx-auto px-4 h-full flex items-center">
                 <div class="max-w-xl">
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Fresh Seafood Delivered To Your Door</h2>
-                    <p class="text-lg md:text-xl text-gray-600 mb-8">Experience the ocean's finest flavors with our premium seafood selection. From dock to doorstep, we ensure the freshest catch reaches your table.</p>
+                    <h2 class="text-5xl font-bold text-gray-900 mb-6">Fresh Seafood Delivered To Your Door</h2>
+                    <p class="text-xl text-gray-600 mb-8">Experience the ocean's finest flavors with our premium seafood selection. From dock to doorstep, we ensure the freshest catch reaches your table.</p>
                     <button class="bg-primary text-white px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/90 whitespace-nowrap">Order Now</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Popular Categories -->
-    <section class="py-12 md:py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Popular Categories</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                <!-- Category Cards -->
+            <h2 class="text-3xl font-bold text-center mb-12">Popular Categories</h2>
+            <div class="grid grid-cols-4 gap-8">
                 <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
                     <div class="w-full h-48 mb-4 rounded overflow-hidden">
                         <img src="https://public.readdy.ai/ai/img_res/0e2eb474bb720392fa86a24673367ec0.jpg" class="w-full h-full object-cover object-top" alt="Fresh Fish">
@@ -121,17 +112,35 @@
                     <h3 class="text-xl font-semibold mb-2">Fresh Fish</h3>
                     <p class="text-gray-600">Daily caught fresh fish</p>
                 </div>
-                <!-- Repeat for other categories -->
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-full h-48 mb-4 rounded overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/a5a7475ed9bcc6fb5ba480f9f1cdf7e3.jpg" class="w-full h-full object-cover object-top" alt="Grilled Seafood">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Grilled Seafood</h3>
+                    <p class="text-gray-600">Expertly grilled dishes</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-full h-48 mb-4 rounded overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/3f2e31adae0a6eeadcb88913e1c3bb64.jpg" class="w-full h-full object-cover object-top" alt="Fried Fish">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fried Fish</h3>
+                    <p class="text-gray-600">Crispy fried favorites</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-full h-48 mb-4 rounded overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/1e06391c955a36cfb5fac6940abf11f6.jpg" class="w-full h-full object-cover object-top" alt="Shellfish">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Shellfish</h3>
+                    <p class="text-gray-600">Premium shellfish selection</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Dishes -->
-    <section class="py-12 md:py-20">
+    <section class="py-20">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Featured Dishes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <!-- Dish Cards -->
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Dishes</h2>
+            <div class="grid grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="h-64 overflow-hidden">
                         <img src="https://public.readdy.ai/ai/img_res/6ed957aa04e0bfad6b6c9ea30c707995.jpg" class="w-full h-full object-cover object-top" alt="Grilled Salmon">
@@ -145,17 +154,41 @@
                         </div>
                     </div>
                 </div>
-                <!-- Repeat for other dishes -->
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/9c9a0f0934c7f939da5c3f15a8b1561a.jpg" class="w-full h-full object-cover object-top" alt="Sea Bass">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pan-Seared Sea Bass</h3>
+                        <p class="text-gray-600 mb-4">Chilean sea bass with crispy skin and herb butter sauce</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-primary">Ksh. 32.99</span>
+                            <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/1c45d7fd73d97d1952f92d6676c02d3d.jpg" class="w-full h-full object-cover object-top" alt="Shrimp Skewers">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Grilled Jumbo Shrimp</h3>
+                        <p class="text-gray-600 mb-4">Succulent jumbo shrimp skewers with garlic and herbs</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-primary">Ksh. 26.99</span>
+                            <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Why Choose Us -->
-    <section class="py-12 md:py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <!-- Reasons -->
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-3 gap-8">
                 <div class="text-center">
                     <div class="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
                         <i class="fas fa-fish text-primary text-3xl"></i>
@@ -163,46 +196,148 @@
                     <h3 class="text-xl font-semibold mb-4">Fresh Daily Catch</h3>
                     <p class="text-gray-600">We source our seafood daily from local fishermen to ensure the freshest quality</p>
                 </div>
-                <!-- Repeat for other reasons -->
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-truck text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Fast Delivery</h3>
+                    <p class="text-gray-600">Same-day delivery available for orders placed before 2 PM</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-award text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Quality Guarantee</h3>
+                    <p class="text-gray-600">100% satisfaction guaranteed or your money back</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-12 md:py-20">
+    <section class="py-20">
         <div class="container mx-auto px-4">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <!-- Contact Info -->
-                    <div class="p-6 md:p-12">
-                        <h2 class="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Contact Us</h2>
-                        <div class="space-y-4 md:space-y-6">
-                            <!-- Contact Details -->
+                <div class="grid grid-cols-2">
+                    <div class="p-12">
+                        <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-phone w-6 h-6 text-primary flex items-center justify-center"></i>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-envelope w-6 h-6 text-primary flex items-center justify-center"></i>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-gray-600">contact@fishfeast.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-clock w-6 h-6 text-primary flex items-center justify-center"></i>
+                                <div>
+                                    <p class="font-medium">Hours</p>
+                                    <p class="text-gray-600">Mon-Sun: 9:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-map-marker-alt w-6 h-6 text-primary flex items-center justify-center"></i>
+                                <div>
+                                    <p class="font-medium">Address</p>
+                                    <p class="text-gray-600">123 Seafood Lane, Marina District<br>San Francisco, CA 94123</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Contact Form -->
-                    <div class="bg-gray-50 p-6 md:p-12">
-                        <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Send us a message</h3>
-                        <form class="space-y-4 md:space-y-6">
-                            <!-- Form Fields -->
+
+                    <div class="bg-gray-50 p-12">
+                        <h3 class="text-2xl font-bold mb-6">Send us a message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-200 rounded-button text-sm focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border border-gray-200 rounded-button text-sm focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-button text-sm focus:outline-none focus:border-primary"></textarea>
+                            </div>
+                            <button class="bg-primary text-white px-6 py-3 w-full !rounded-button hover:bg-primary/90 whitespace-nowrap">Send Message</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 md:py-20">
+    <footer class="bg-gray-900 text-white py-20">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-                <!-- Footer Columns -->
+            <div class="grid grid-cols-4 gap-12">
+                <div>
+                    <h1 class="text-3xl font-['Pacifico'] mb-6">logo</h1>
+                    <p class="text-gray-400">Bringing the ocean's finest catch to your doorstep with premium quality and exceptional service.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Menu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Order Now</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get special offers and updates</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-button border-none text-gray-900">
+                        <button class="bg-primary px-6 py-2 !rounded-r-button hover:bg-primary/90 whitespace-nowrap">Subscribe</button>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Footer Bottom -->
-            <div class="border-t border-gray-800 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2024 FishFeast. All rights reserved.</p>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex justify-between items-center">
+                <p class="text-gray-400">&copy; 2024 FishFeast. All rights reserved.</p>
                 <div class="flex space-x-4">
-                    <!-- Payment Icons -->
+                    <img src="https://public.readdy.ai/ai/img_res/c3c2c905fa40b16ad0af2d7b7dc0cee2.jpg" alt="Visa" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/ab18fc51ded0f6b13fde6228a6a3b91a.jpg" alt="Mastercard" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/425713d038b9a8a04393b1c9e73cd7fd.jpg" alt="American Express" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/5baa6b2860a137d0de15ff4ed340e30d.jpg" alt="PayPal" class="h-6">
                 </div>
             </div>
         </div>
