@@ -59,7 +59,7 @@
                 <div class="flex items-center">
                     <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
                 </div>
-                <nav class="flex items-center space-x-8">
+                <nav class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
                     <a href="menu.html" class="text-primary font-medium">Menu</a>
                     <a href="orders.html" class="text-gray-700 hover:text-primary">Orders</a>
@@ -71,14 +71,17 @@
                         </button>
                     </div>
                 </nav>
+                <button class="md:hidden !rounded-button p-2 text-gray-700 hover:text-primary">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
     </header>
     <main class="pt-20 pb-16">
-        <div class="max-w-7xl mx-auto px-4 flex gap-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-8">
             <div class="flex-1">
                 <div class="mb-8">
-                    <div class="flex gap-4 mb-6">
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
                         <div class="flex-1 relative">
                             <input type="text" placeholder="Search for fish..." class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-primary text-sm">
                             <i class="fas fa-fish absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
@@ -95,182 +98,74 @@
                         </div>
                     </div>
                 </div>
+                    <!-- Product Cards (Repeat for each product) -->
+                    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="product-card bg-white p-3 sm:p-4 rounded-lg shadow-sm">
+                            <div class="relative mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/1c8dc4cf6c6cfc248bac085df14d06ce.jpg" class="w-full h-40 sm:h-48 object-cover rounded" alt="Fresh Salmon">
+                                <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
+                            </div>
+                            <h3 class="font-medium mb-1 text-sm sm:text-base">Fresh Atlantic Salmon</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mb-2">Premium quality Norwegian salmon, perfect for sushi or grilling</p>
+                            <div class="flex items-center mb-2">
+                                <div class="text-yellow-400 flex gap-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm text-gray-600 ml-2">4.5 (128)</span>
+                            </div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="font-medium text-base sm:text-sm">Ksh. 24.99/lb</span>
+                                <div class="flex items-center gap-2">
+                                    <button class="!rounded-button w-6 sm:w-8 h-6 sm:h-8 flex items-center justify-center border border-gray-200">-</button>
+                                    <input type="number" value="1" class="quantity-input w-10 sm:w-12 h-6 sm:h-8 text-center border border-gray-200 rounded">
+                                    <button class="!rounded-button w-6 sm:w-8 h-6 sm:h-8 flex items-center justify-center border border-gray-200">+</button>
+                                </div>
+                            </div>
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
+                        </div>
 
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/1c8dc4cf6c6cfc248bac085df14d06ce.jpg" class="w-full h-48 object-cover rounded" alt="Fresh Salmon">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Fresh Atlantic Salmon</h3>
-                        <p class="text-sm text-gray-600 mb-2">Premium quality Norwegian salmon, perfect for sushi or grilling</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                        <!-- Repeat the product card for each product -->
+                        <div class="product-card bg-white p-3 sm:p-4 rounded-lg shadow-sm">
+                            <div class="relative mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/1c8dc4cf6c6cfc248bac085df14d06ce.jpg" class="w-full h-40 sm:h-48 object-cover rounded" alt="Fresh Salmon">
+                                <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
                             </div>
-                            <span class="text-sm text-gray-600 ml-2">4.5 (128)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 24.99/lb</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
+                            <h3 class="font-medium mb-1 text-sm sm:text-base">Fresh Atlantic Salmon</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 mb-2">Premium quality Norwegian salmon, perfect for sushi or grilling</p>
+                            <div class="flex items-center mb-2">
+                                <div class="text-yellow-400 flex gap-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm text-gray-600 ml-2">4.5 (128)</span>
                             </div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="font-medium text-base sm:text-lg">Ksh. 24.99/lb</span>
+                                <div class="flex items-center gap-2">
+                                    <button class="!rounded-button w-6 sm:w-8 h-6 sm:h-8 flex items-center justify-center border border-gray-200">-</button>
+                                    <input type="number" value="1" class="quantity-input w-10 sm:w-12 h-6 sm:h-8 text-center border border-gray-200 rounded">
+                                    <button class="!rounded-button w-6 sm:w-8 h-6 sm:h-8 flex items-center justify-center border border-gray-200">+</button>
+                                </div>
+                            </div>
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
                         </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
 
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/e5f9a760770d3287419528e219201665.jpg" class="w-full h-48 object-cover rounded" alt="Tuna Steak">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Premium Tuna Steak</h3>
-                        <p class="text-sm text-gray-600 mb-2">Wild-caught yellowfin tuna, sushi-grade quality</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-600 ml-2">5.0 (96)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 32.99/lb</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
-                            </div>
-                        </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/245c54d7b1da00ab2adbd591fbf1e12a.jpg" class="w-full h-48 object-cover rounded" alt="Sea Bass">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Chilean Sea Bass</h3>
-                        <p class="text-sm text-gray-600 mb-2">Premium white fish with a buttery texture</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-600 ml-2">4.0 (75)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 28.99/lb</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
-                            </div>
-                        </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/6790b439330baaf405cc06c8e581f841.jpg" class="w-full h-48 object-cover rounded" alt="Jumbo Shrimp">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Jumbo Tiger Shrimp</h3>
-                        <p class="text-sm text-gray-600 mb-2">Large, succulent shrimp perfect for grilling</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-sm text-gray-600 ml-2">4.5 (112)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 21.99/lb</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
-                            </div>
-                        </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/d4276a2b4e17b0761c145244f26c1c3a.jpg" class="w-full h-48 object-cover rounded" alt="Lobster Tail">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Maine Lobster Tail</h3>
-                        <p class="text-sm text-gray-600 mb-2">Sweet and tender cold water lobster</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-600 ml-2">5.0 (89)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 39.99/lb</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
-                            </div>
-                        </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card bg-white p-4 rounded-lg shadow-sm">
-                        <div class="relative mb-4">
-                            <img src="https://public.readdy.ai/ai/img_res/f72f053c6189ce25a8398078dcf6de4a.jpg" class="w-full h-48 object-cover rounded" alt="Fresh Oysters">
-                            <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">Fresh Today</span>
-                        </div>
-                        <h3 class="font-medium mb-1">Fresh Pacific Oysters</h3>
-                        <p class="text-sm text-gray-600 mb-2">Plump and briny, perfect on the half shell</p>
-                        <div class="flex items-center mb-2">
-                            <div class="text-yellow-400 flex gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-600 ml-2">4.0 (64)</span>
-                        </div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="font-medium text-lg">Ksh. 18.99/dozen</span>
-                            <div class="flex items-center gap-2">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">-</button>
-                                <input type="number" value="1" class="quantity-input w-12 h-8 text-center border border-gray-200 rounded">
-                                <button class="!rounded-button w-8 h-8 flex items-center justify-center border border-gray-200">+</button>
-                            </div>
-                        </div>
-                        <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 whitespace-nowrap">Add to Cart</button>
-                    </div>
+                        <!-- Add more product cards as needed -->
                 </div>
             </div>
 
-            <div class="w-80 shrink-0">
-                <div class="bg-white p-6 rounded-lg shadow-sm sticky top-20">
+            <div class="w-full lg:w-80 shrink-0">
+                <div class="bg-white p-6 rounded-lg shadow-sm lg:sticky lg:top-20">
                     <h2 class="font-medium text-lg mb-4">Order Summary</h2>
                     <div class="space-y-4 mb-6">
+                        <!-- Order Items -->
                         <div class="flex items-start justify-between">
                             <div>
                                 <h4 class="font-medium">Fresh Atlantic Salmon</h4>
@@ -278,44 +173,20 @@
                             </div>
                             <span class="font-medium">Ksh. 24.99</span>
                         </div>
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="font-medium">Jumbo Tiger Shrimp</h4>
-                                <p class="text-sm text-gray-600">2 lb</p>
-                            </div>
-                            <span class="font-medium">Ksh. 43.98</span>
-                        </div>
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="font-medium">Maine Lobster Tail</h4>
-                                <p class="text-sm text-gray-600">1 lb</p>
-                            </div>
-                            <span class="font-medium">Ksh. 39.99</span>
-                        </div>
+                        <!-- Repeat for other items -->
                     </div>
 
                     <div class="space-y-3 mb-6">
+                        <!-- Subtotal, Delivery, Tax, Total -->
                         <div class="flex justify-between text-sm">
                             <span class="text-gray-600">Subtotal</span>
                             <span class="font-medium">Ksh. 108.96</span>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-600">Delivery Fee</span>
-                            <span class="font-medium">Ksh. 5.99</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-600">Tax</span>
-                            <span class="font-medium">Ksh. 9.80</span>
-                        </div>
-                        <div class="border-t pt-3">
-                            <div class="flex justify-between">
-                                <span class="font-medium">Total</span>
-                                <span class="font-medium">Ksh. 124.75</span>
-                            </div>
-                        </div>
+                        <!-- Repeat for other details -->
                     </div>
 
                     <div class="space-y-4">
+                        <!-- Delivery Address and Special Instructions -->
                         <div>
                             <label class="block text-sm font-medium mb-2">Delivery Address</label>
                             <input type="text" placeholder="Enter your delivery address" class="w-full px-3 py-2 border border-gray-200 rounded text-sm">
@@ -328,6 +199,7 @@
                     </div>
 
                     <div class="mt-6 text-sm text-gray-600">
+                        <!-- Delivery Info -->
                         <p class="flex items-center gap-2 mb-2">
                             <i class="fas fa-clock w-5 h-5 flex items-center justify-center"></i>
                             <span>Estimated delivery: 30-45 minutes</span>
@@ -342,52 +214,69 @@
         </div>
     </main>
 
-    <footer class="bg-white border-t">
-        <div class="max-w-7xl mx-auto px-4 py-8">
-            <div class="grid grid-cols-4 gap-8">
+    <footer class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div>
-                    <h3 class="font-medium mb-4">Contact Us</h3>
-                    <div class="space-y-2 text-sm text-gray-600">
-                        <p>1234 Seafood Lane</p>
-                        <p>Boston, MA 02110</p>
-                        <p>Phone: (555) 123-4567</p>
-                        <p>Email: support@logo.com</p>
-                    </div>
+                    <h1 class="text-3xl font-['Pacifico'] mb-6">logo</h1>
+                    <p class="text-gray-400">Bringing the ocean's finest catch to your doorstep with premium quality and exceptional service.</p>
                 </div>
+
                 <div>
-                    <h3 class="font-medium mb-4">Hours</h3>
-                    <div class="space-y-2 text-sm text-gray-600">
-                        <p>Monday - Friday: 9AM - 9PM</p>
-                        <p>Saturday: 10AM - 8PM</p>
-                        <p>Sunday: 10AM - 6PM</p>
-                    </div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-white">Menu</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-white">Order Now</a></li>
+                        <li><a href="contact,html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
                 </div>
+
                 <div>
-                    <h3 class="font-medium mb-4">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="#" class="text-gray-600 hover:text-primary">
-                            <i class="fab fa-facebook-f w-5 h-5 flex items-center justify-center"></i>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-primary">
-                            <i class="fab fa-twitter w-5 h-5 flex items-center justify-center"></i>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-primary">
-                            <i class="fab fa-instagram w-5 h-5 flex items-center justify-center"></i>
-                        </a>
-                    </div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                    </ul>
                 </div>
+
                 <div>
-                    <h3 class="font-medium mb-4">Payment Methods</h3>
-                    <div class="flex gap-4">
-                        <i class="fab fa-cc-visa text-2xl text-gray-600"></i>
-                        <i class="fab fa-cc-mastercard text-2xl text-gray-600"></i>
-                        <i class="fab fa-cc-amex text-2xl text-gray-600"></i>
-                        <i class="fab fa-cc-paypal text-2xl text-gray-600"></i>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get special offers and updates</p>
+                    <div class="flex flex-col sm:flex-row">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-t-button sm:rounded-l-button sm:rounded-r-none border-none text-gray-900">
+                        <button class="bg-primary px-6 py-2 rounded-b-button sm:rounded-r-button sm:rounded-l-none hover:bg-primary/90 whitespace-nowrap">Subscribe</button>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t mt-8 pt-8 text-sm text-gray-600">
-                <p>© 2024 logo. All rights reserved. <a href="#" class="text-primary">Terms & Conditions</a> | <a href="#" class="text-primary">Privacy Policy</a></p>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+                <p class="text-gray-400 mb-4 sm:mb-0">&copy; 2024 FishFeast. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <img src="https://public.readdy.ai/ai/img_res/c3c2c905fa40b16ad0af2d7b7dc0cee2.jpg" alt="Visa" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/ab18fc51ded0f6b13fde6228a6a3b91a.jpg" alt="Mastercard" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/425713d038b9a8a04393b1c9e73cd7fd.jpg" alt="American Express" class="h-6">
+                    <img src="https://public.readdy.ai/ai/img_res/5baa6b2860a137d0de15ff4ed340e30d.jpg" alt="PayPal" class="h-6">
+                </div>
             </div>
         </div>
     </footer>
