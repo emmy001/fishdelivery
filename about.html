@@ -50,19 +50,63 @@
     </style>
 </head>
 <body class="bg-white">
-    <header class="fixed w-full bg-white shadow-sm z-50">
-        <div class="max-w-[1440px] mx-auto px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">logo</a>
-            <nav class="flex items-center space-x-8">
-                <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
-                <a href="about.html" class="text-primary font-medium">About Us</a>
-                <a href="menu.html" class="text-gray-600 hover:text-primary">Menu</a>
-                <a href="delivery.html" class="text-gray-600 hover:text-primary">Delivery</a>
-                <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
-                <a href="menu.html"><button class="!rounded-button bg-primary text-white px-6 py-2 whitespace-nowrap">Order Now</button></a>
+    <header class="bg-white shadow-sm fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
+                <a href="menu.html" class="text-primary font-medium">Menu</a>
+                <a href="orders.html" class="text-gray-700 hover:text-primary">Orders</a>
+                <a href="account.html" class="block py-2 text-gray-700 hover:text-primary flex items-center">
+                    <i class="fas fa-user text-xl mr-2"></i>
+                </a>
+
+                <!-- Cart Icon -->
+                <div class="relative">
+                    <a href="cart.html" class="p-2 text-gray-700 hover:text-primary relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                            3
+                        </span>
+                    </a>
+                </div>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden !rounded-button p-2 text-gray-700 hover:text-primary">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
         </div>
-    </header>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md rounded-lg p-4 absolute top-16 left-0 w-full">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+            <a href="menu.html" class="block py-2 text-primary font-medium">Menu</a>
+            <a href="orders.html" class="block py-2 text-gray-700 hover:text-primary">Orders</a>
+            <a href="account.html" class="block py-2 text-gray-700 hover:text-primary">Account</a>
+            <a href="cart.html" class="block py-2 text-gray-700 hover:text-primary flex items-center">
+                <i class="fas fa-shopping-cart text-xl mr-2"></i> Cart (3)
+            </a>
+            <a href="account.html" class="block py-2 text-gray-700 hover:text-primary flex items-center">
+                <i class="fas fa-user text-xl mr-2"></i> Account
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Toggle mobile menu visibility
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
 
     <main>
         <section class="hero-section h-[600px] md:h-[500px] sm:h-[400px] flex items-center relative">
