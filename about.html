@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Fresh Fish Delivery</title>
+    <title>About Us - Matoso Victoria Fish Point</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,25 +51,29 @@
 </head>
 <body class="bg-white">
     <header class="bg-white shadow-sm fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="w-full mx-auto px-4">
         <div class="flex items-center justify-between h-16">
             <!-- Logo -->
-            <div class="flex items-center">
-                <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-            </div>
+            <div class="flex items-center mr-auto space-x-2  lg:space-x-4 md:space-x-4">
+            <a href="#">
+                <img src="assets/logo.png" alt="Logo" class="h-12 md:h-16 lg:h-20 w-auto">
+            </a>
+            <span class="text-lg md:text-xl sm:text-l font-bold text-blue-600">MATOSO VICTORIA FISH POINT</span>
+        </div>
+
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-primary">Home</a>
-                <a href="menu.html" class="text-primary font-medium">Menu</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-primary font-medium">Home</a>
+                <a href="menu.html" class="text-gray-700 hover:text-primary">Menu</a>
                 <a href="orders.html" class="text-gray-700 hover:text-primary">Orders</a>
                 <a href="account.html" class="block py-2 text-gray-700 hover:text-primary flex items-center">
                     <i class="fas fa-user text-xl mr-2"></i>
                 </a>
 
                 <!-- Cart Icon -->
-                <div class="relative">
-                    <a href="cart.html" class="p-2 text-gray-700 hover:text-primary relative">
+                <div class="relative ml-4">
+                    <a href="cart.html" class="text-gray-700 hover:text-primary relative">
                         <i class="fas fa-shopping-cart text-xl"></i>
                         <span class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                             3
@@ -79,15 +83,15 @@
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden !rounded-button p-2 text-gray-700 hover:text-primary">
+            <button id="menu-toggle" class="md:hidden rounded-full p-2 text-gray-700 hover:text-primary">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
 
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md rounded-lg p-4 absolute top-16 left-0 w-full">
-            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
-            <a href="menu.html" class="block py-2 text-primary font-medium">Menu</a>
+            <a href="index.html" class="block py-2 text-primary font-medium">Home</a>
+            <a href="menu.html" class="block py-2 text-gray-700 hover:text-primary">Menu</a>
             <a href="orders.html" class="block py-2 text-gray-700 hover:text-primary">Orders</a>
             <a href="account.html" class="block py-2 text-gray-700 hover:text-primary">Account</a>
             <a href="cart.html" class="block py-2 text-gray-700 hover:text-primary flex items-center">

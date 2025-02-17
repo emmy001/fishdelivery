@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FishFeast - Fresh Fish</title>
+    <title>Home - Matoso Victoria Fish Point</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -54,15 +54,19 @@
 </head>
 <body class="font-sans">
     <header class="bg-white shadow-sm fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="w-full mx-auto px-4">
         <div class="flex items-center justify-between h-16">
             <!-- Logo -->
-            <div class="flex items-center">
-                <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-            </div>
+            <div class="flex items-center mr-auto space-x-2  lg:space-x-4 md:space-x-4">
+            <a href="#">
+                <img src="assets/logo.png" alt="Logo" class="h-12 md:h-16 lg:h-20 w-auto">
+            </a>
+            <span class="text-lg md:text-xl sm:text-l font-bold text-blue-600">MATOSO VICTORIA FISH POINT</span>
+        </div>
+
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center space-x-8">
+            <nav class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-primary font-medium">Home</a>
                 <a href="menu.html" class="text-gray-700 hover:text-primary">Menu</a>
                 <a href="orders.html" class="text-gray-700 hover:text-primary">Orders</a>
@@ -71,8 +75,8 @@
                 </a>
 
                 <!-- Cart Icon -->
-                <div class="relative">
-                    <a href="cart.html" class="p-2 text-gray-700 hover:text-primary relative">
+                <div class="relative ml-4">
+                    <a href="cart.html" class="text-gray-700 hover:text-primary relative">
                         <i class="fas fa-shopping-cart text-xl"></i>
                         <span class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                             3
@@ -82,7 +86,7 @@
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden !rounded-button p-2 text-gray-700 hover:text-primary">
+            <button id="menu-toggle" class="md:hidden rounded-full p-2 text-gray-700 hover:text-primary">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
@@ -110,6 +114,7 @@
         menu.classList.toggle('hidden');
     });
 </script>
+
 
     <section class="hero-section h-[600px] relative flex items-center">
 
@@ -142,79 +147,78 @@
             <!-- Grid Layout -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
 
-                <!-- Fresh tilapia -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/tilapia_fresh_full.png" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cut Fresh Tilapia</h3>
-                    <p class="text-sm md:text-base text-gray-600">Expertly cut tilapia pieces</p>
-                </div>
-
-                <!-- Fried Fish -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/tilapiaFried.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Fried Fish</h3>
-                    <p class="text-sm md:text-base text-gray-600">Crispy fried favorites</p>
-                </div>
-
-                <!-- Freshly cut tilapia -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/fresh_tilapia_half.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cut Fresh Tilapia</h3>
-                    <p class="text-sm md:text-base text-gray-600">Expertly cut tilapia pieces</p>
-                </div>
-
-                <!-- deep-fry cut -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/fried_tilapia_half.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cut Tilapia Fish Pieces</h3>
-                    <p class="text-sm md:text-base text-gray-600">Deep-fried tilapia pieces</p>
-                </div>
-
-
-                <!-- nile perch-->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/tilapia_fresh_full.png" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cut Fresh Tilapia</h3>
-                    <p class="text-sm md:text-base text-gray-600">Expertly cut tilapia pieces</p>
-                </div>
-
-                <!-- Freshly cut tilapia -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/fresh_tilapia_half.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cut Fresh Tilapia</h3>
-                    <p class="text-sm md:text-base text-gray-600">Expertly cut tilapia pieces</p>
-                </div>
-
-                <!-- Fried Fish -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/fried_tilapia_full.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Fried Fish</h3>
-                    <p class="text-sm md:text-base text-gray-600">Crispy fried favorites</p>
-                </div>
-
-                <!-- deep-fry cut -->
-                <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
-                        <img src="assets/fish.jpg" class="w-full h-full object-contain" alt="Grilled Seafood">
-                    </div>
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Nile Perch</h3>
-                    <p class="text-sm md:text-base text-gray-600">Fish Steaks</p>
-                </div>
+                <!-- Fresh Whole Tilapia -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/tilapia_fresh_full.png" class="w-full h-full object-contain" alt="Fresh Whole Tilapia">
             </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Fresh Whole Tilapia</h3>
+            <p class="text-sm md:text-base text-gray-600">Premium, whole tilapia, freshly sourced and ready for preparation.</p>
+        </div>
+
+        <!-- Crispy Fried Tilapia -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/tilapiaFried.jpg" class="w-full h-full object-contain" alt="Crispy Fried Tilapia">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Crispy Fried Tilapia</h3>
+            <p class="text-sm md:text-base text-gray-600">Golden-brown, deep-fried tilapia with a crispy outer layer and tender inside.</p>
+        </div>
+
+        <!-- Fresh Tilapia Fillet -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/fillet.jpg" class="w-full h-full object-contain" alt="Fresh Tilapia Fillet">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Fresh Tilapia Fillet</h3>
+            <p class="text-sm md:text-base text-gray-600">Boneless and expertly cut tilapia fillet, perfect for grilling or frying.</p>
+        </div>
+
+        <!-- Fried Tilapia Pieces -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/fried_tilapia_half.jpg" class="w-full h-full object-contain" alt="Fried Tilapia Pieces">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Fried Tilapia Pieces</h3>
+            <p class="text-sm md:text-base text-gray-600">Crispy deep-fried tilapia chunks, seasoned to perfection.</p>
+        </div>
+
+        <!-- Fresh Nile Perch Fillet -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/fresh_tilapia_half.jpg" class="w-full h-full object-contain" alt="Fresh Nile Perch Fillet">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Fresh Nile Perch Fillet</h3>
+            <p class="text-sm md:text-base text-gray-600">Premium-quality Nile Perch fillet, rich in flavor and ideal for grilling.</p>
+        </div>
+
+        <!-- Tilapia Steaks -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/steak.jpg" class="w-full h-full object-contain" alt="Tilapia Steaks">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Tilapia Steaks</h3>
+            <p class="text-sm md:text-base text-gray-600">Thick-cut tilapia steaks, ready for grilling, frying, or baking.</p>
+        </div>
+
+        <!-- Whole Fried Tilapia -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/fried_tilapia_full.jpg" class="w-full h-full object-contain" alt="Whole Fried Tilapia">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Whole Fried Tilapia</h3>
+            <p class="text-sm md:text-base text-gray-600">Perfectly fried whole tilapia with crispy skin and juicy meat.</p>
+        </div>
+
+        <!-- Nile Perch Steaks -->
+        <div class="bg-white rounded-lg p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full h-40 sm:h-60 md:h-56 mb-4 rounded overflow-hidden flex justify-center items-center">
+                <img src="assets/fish.jpg" class="w-full h-full object-contain" alt="Nile Perch Steaks">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Nile Perch Steaks</h3>
+            <p class="text-sm md:text-base text-gray-600">Thick-cut Nile Perch steaks, rich in Omega-3 and perfect for grilling.</p>
+        </div>
+
         </div>
     </section>
 
@@ -228,7 +232,7 @@
         <!-- Introductory Paragraph -->
         <div class="max-w-2xl mx-auto text-center mb-8 md:mb-12">
             <p class="text-gray-700 text-sm md:text-base">
-                We offer a variety of freshly prepared seafood dishes, made to order with high-quality ingredients. Whether you're craving grilled fish, perfectly seared shrimp, or delicate seafood specialties, we ensure each dish is crafted to perfection. Enjoy the taste of the ocean, delivered straight to your plate.
+                We offer a variety of freshly prepared seafood dishes, made to order with high-quality ingredients. Whether you're craving grilled fish, perfectly seared shrimp, or delicate seafood specialties, we ensure each dish is crafted to perfection. Enjoy the taste of the lakes, delivered straight to your plate.
             </p>
         </div>
 
@@ -392,7 +396,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div>
                     <h1 class="text-3xl font-['Pacifico'] mb-6">logo</h1>
-                    <p class="text-gray-400">Bringing the ocean's finest catch to your doorstep with premium quality and exceptional service.</p>
+                    <p class="text-gray-400">Bringing the lake's finest catch to your doorstep with premium quality and exceptional service.</p>
                 </div>
 
                 <div>
